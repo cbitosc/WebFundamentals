@@ -1,0 +1,29 @@
+<html>
+<head>
+<style>
+<!--static check-->
+h2 {
+  position: absolute; 
+  left: 100px;
+  top: 150px;
+}
+</style>
+<script>
+function move(x,y){
+document.getElementById("h").style.left=x.value;
+document.getElementById("h").style.top=y.value;
+}
+</script>
+</head>
+<body>
+
+<h1>The position Property</h1>
+
+<h2 id="h">This is a heading with an absolute position</h2>
+X-coordinate:<input type="text" id="x"/>
+Y-coordinate:<input type='text' id="y"/>
+<button onclick="move(getElementById('x'),getElementById('y'))">Click</button>
+<p>With absolute positioning, an element can be placed anywhere on a page. The heading below is placed 100px from the left of the page and 150px from the top of the page.</p>
+
+</body>
+</html>

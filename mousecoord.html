@@ -1,0 +1,15 @@
+<html>
+<head>
+<script>
+function mouse(event){
+var t="X-coordinate: "+event.clientX+" Y-coordinate: "+event.clientY;
+document.getElementById("ans").innerHTML=t
+}
+</script>
+</head>
+<body onclick="mouse(event);">
+Click anywhere
+<p>Mouse coordinates will be displayed here</p>
+<p id="ans"></p>
+</body>
+</html>
